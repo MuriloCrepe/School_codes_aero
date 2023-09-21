@@ -1,6 +1,5 @@
 clear, clc, close all
-%% Trabalho 3
-% Compensador por avanço e atraso de fase
+%% Compensador por avanço e atraso de fase
 % Máximo sobressinal 25%; Tempo de acomodação 2s (5%); Erro regime 5%
 num = 1; den = conv(conv([1 1],[1 4]),[1 6]); G_ma = tf(num,den);
 figure('Name','LR do sistema sem compensador'), hold on
